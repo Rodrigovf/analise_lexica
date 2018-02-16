@@ -1,13 +1,12 @@
-print ---> Palavra Reservada ---> 0  ---> 0 
-( ---> Delimitador ---> 0  ---> 6 
-' ---> Delimitador ---> 0  ---> 7 
-HelloWorld ---> Identificador ---> 0  ---> 8 
-' ---> Delimitador ---> 0  ---> 18 
-) ---> Delimitador ---> 0  ---> 19 
-{ ---> Delimitador ---> 0  ---> 21 
-2 ---> Identificador ---> 0  ---> 23 
-+ ---> Operador ---> 0  ---> 25 
-2 ---> Identificador ---> 0  ---> 27 
-/ ---> Operador ---> 0  ---> 29 
-4 ---> Identificador ---> 0  ---> 31 
-} ---> Delimitador ---> 0  ---> 32 
+print | Palavra Reservada | 0  | 0 
+( | Delimitador | 0  | 3 
+' | Delimitador | 0  | 6 
+id1 | Identificador[0] | 0  | 7 
+' | Delimitador | 0  | 10 
+) | Delimitador | 0  | 11 
+[ | Delimitador | 0  | 13 
+id2 | Identificador[1] | 0  | 14 
+] | Delimitador | 0  | 17 
+{ | Delimitador | 0  | 19 
+3 | Identificador[2] | 0  | 20 
+} | Delimitador | 0  | 21 

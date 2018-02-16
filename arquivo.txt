@@ -1,1 +1,1 @@
-print ('HelloWorld') { 2 + 2 / 4}
+print('id1') [id2] {3}
