@@ -1,31 +1,48 @@
 class Analise(object):
 
-    def analisaFrase(self, letra, palavra ):
+    def analisaFrase(self, letra, palavra ): # rece a paavra formada ate o momento e o caracter
 
         #Ler lista de tokens
         arquivo = open('keywords.txt', 'r')
+        print("inicio")
+        print(letra)
+        print(palavra)
 
         for linha in arquivo:
             token = linha.split(' ')
+            
             if(letra == token[1]):
                 return [letra, token[0]]
             elif(palavra == token[1]):
                 return [palavra, token[0]]
             elif(str(letra) == " "):
                 return [letra, palavra]
+        
         return [None, None]
 
     def verificaFrase(self, frase, numlinha):
+        numLinha = str(numlinha)
         lista = list(frase)
+        while True:
+            try:
+                lista.remove('\t')
+
+            except ValueError:
+                try:
+                    lista.remove('\n')
+                except ValueError:
+                    break
+
         data = ''
         linha = ''
-        numLinha = str(numlinha)
         coluna = 0
-        contId=0
+        contId = 0
 
         for i in range(len(lista)):
+
             linha = linha + str(lista[i])
             condicao = self.analisaFrase(lista[i],linha)
+            print(str(lista))
 
             if(condicao[1] == '1'):
                 data += condicao[0] + ' | Palavra Reservada | '+ numLinha  +'  | '+ str(coluna) +' \n'
@@ -63,13 +80,11 @@ class Analise(object):
                     coluna = i +1
                 else:
                     s = linha.replace(" ",'')
-                    print(s)
                     data += s + ' | Identificador['+str(contId)+'] | '  + numLinha +'  | '+ str(coluna) +' \n'
                     linha = ''
                     coluna = i +1
                     contId += 1
-            else:
-                print('haha')
+                
 
         if(len(linha) > 0):
             data += linha + ' | Identificador['+str(contId)+'] | '  + numLinha +' \n'
