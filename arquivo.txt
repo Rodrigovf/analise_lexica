@@ -1,9 +1,1 @@
-def verificaFrase(self, frase, nlinha):
-        lista = list(frase)
-        data = ''
-        linha = ''
-        numLinha = str(nlinha)
-
-        for i in range(len(lista)):
-            linha = linha + str(lista[i])
-            condicao = self.analisaFrase(lista[i],linha)
+print ('HelloWorld') { 2 + 2 / 4}

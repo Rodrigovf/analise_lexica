@@ -1,69 +1,13 @@
-def ---> Palavra Reservada ---> 1 
-verificaFrase ---> Identificador ---> 1 
-( ---> Delimitador ---> 1 
-self ---> Palavra Reservada ---> 1 
-, ---> Delimitador ---> 1 
-frase ---> Identificador ---> 1 
-, ---> Delimitador ---> 1 
-nlinha ---> Identificador ---> 1 
-) ---> Delimitador ---> 1 
-: ---> Delimitador ---> 1 
-list ---> Palavra Reservada ---> 2 
-a ---> Identificador ---> 2 
-= ---> Delimitador ---> 2 
-list ---> Palavra Reservada ---> 2 
-( ---> Delimitador ---> 2 
-frase ---> Identificador ---> 2 
-) ---> Delimitador ---> 2 
-data ---> Identificador ---> 3 
-= ---> Delimitador ---> 3 
-' ---> Delimitador ---> 3 
-' ---> Delimitador ---> 3 
-linha ---> Identificador ---> 4 
-= ---> Delimitador ---> 4 
-' ---> Delimitador ---> 4 
-' ---> Delimitador ---> 4 
-numLinha ---> Identificador ---> 5 
-= ---> Delimitador ---> 5 
-str ---> Identificador ---> 5 
-( ---> Delimitador ---> 5 
-nlinha ---> Identificador ---> 5 
-) ---> Delimitador ---> 5 
-for ---> Palavra Reservada ---> 7 
-i ---> Identificador ---> 7 
-in ---> Palavra Reservada ---> 7 
-range ---> Palavra Reservada ---> 7 
-( ---> Delimitador ---> 7 
-len ---> Palavra Reservada ---> 7 
-( ---> Delimitador ---> 7 
-list ---> Palavra Reservada ---> 7 
-a ---> Identificador ---> 7 
-) ---> Delimitador ---> 7 
-) ---> Delimitador ---> 7 
-: ---> Delimitador ---> 7 
-linha ---> Identificador ---> 8 
-= ---> Delimitador ---> 8 
-linha ---> Identificador ---> 8 
-+ ---> Operador ---> 8 
-str ---> Identificador ---> 8 
-( ---> Delimitador ---> 8 
-list ---> Palavra Reservada ---> 8 
-a ---> Identificador ---> 8 
-[ ---> Delimitador ---> 8 
-i ---> Identificador ---> 8 
-] ---> Delimitador ---> 8 
-) ---> Delimitador ---> 8 
-condicao ---> Identificador ---> 9 
-= ---> Delimitador ---> 9 
-self ---> Palavra Reservada ---> 9 
-. ---> Delimitador ---> 9 
-analisaFrase ---> Identificador ---> 9 
-( ---> Delimitador ---> 9 
-list ---> Palavra Reservada ---> 9 
-a ---> Identificador ---> 9 
-[ ---> Delimitador ---> 9 
-i ---> Identificador ---> 9 
-] ---> Delimitador ---> 9 
-, ---> Delimitador ---> 9 
-linha ---> Identificador ---> 9 
-) ---> Delimitador ---> 9 
+print ---> Palavra Reservada ---> 0  ---> 0 
+( ---> Delimitador ---> 0  ---> 6 
+' ---> Delimitador ---> 0  ---> 7 
+HelloWorld ---> Identificador ---> 0  ---> 8 
+' ---> Delimitador ---> 0  ---> 18 
+) ---> Delimitador ---> 0  ---> 19 
+{ ---> Delimitador ---> 0  ---> 21 
+2 ---> Identificador ---> 0  ---> 23 
++ ---> Operador ---> 0  ---> 25 
+2 ---> Identificador ---> 0  ---> 27 
+/ ---> Operador ---> 0  ---> 29 
+4 ---> Identificador ---> 0  ---> 31 
+} ---> Delimitador ---> 0  ---> 32 

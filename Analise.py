@@ -8,9 +8,9 @@ data = ''
 """codigo = arquivo.readlines()"""
 numLinha =0
 for frase in arquivo:
-    numLinha+=1
     strNumLinha = str(numLinha)
     data += analise.verificaFrase(frase,numLinha)
+    numLinha+=1
     print(data)
     
 
