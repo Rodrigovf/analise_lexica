@@ -1,20 +1,25 @@
 class Analise(object):
 
-    def analisaFrase(self, letra, palavra ): # rece a paavra formada ate o momento e o caracter
+    def analisaFrase(self, letra, palavra, letraProx): # rece a paavra formada ate o momento e o caracter
 
         #Ler lista de tokens
         arquivo = open('keywords.txt', 'r')
-        print("inicio")
+        arquivo2 = open('keywords.txt', 'r')
+        '''print("inicio")
         print(letra)
-        print(palavra)
+        print(palavra)'''
 
         for linha in arquivo:
             token = linha.split(' ')
-            
+
             if(letra == token[1]):
                 return [letra, token[0]]
-            elif(palavra == token[1]):
-                return [palavra, token[0]]
+            elif(letraProx == token[1] or letraProx == " "):
+                for lin in arquivo2:
+                    tok = lin.split(' ')
+                    print(palavra)
+                    if(palavra == tok[1]):
+                        return [palavra, tok[0]]
             elif(str(letra) == " "):
                 return [letra, palavra]
         
@@ -41,7 +46,10 @@ class Analise(object):
         for i in range(len(lista)):
 
             linha = linha + str(lista[i])
-            condicao = self.analisaFrase(lista[i],linha)
+            if(i+1 >= len(lista)):
+                condicao = self.analisaFrase(lista[i], linha, '')
+            else:
+                condicao = self.analisaFrase(lista[i],linha, lista[i+1])
             print(str(lista))
 
             if(condicao[1] == '1'):
@@ -87,7 +95,7 @@ class Analise(object):
                 
 
         if(len(linha) > 0):
-            data += linha + ' | Identificador['+str(contId)+'] | '  + numLinha +' \n'
+            data += linha + ' | Identificador['+str(contId)+'] | '  + numLinha +'  | '+ str(coluna) +' \n'
             linha = ''  
         
         return data
